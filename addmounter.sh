@@ -1,0 +1,2 @@
+#!/usr/bin/env
+sudo s3fs XXXXXBUCKET:/folder /var/www/xxxxfolder/uploads -o allow_other  -o passwd_file=${HOME}/.passwd-s3fs -o dbglevel=err -f -o curldbg -o nonempty -o uid=33 -o mp_umask=000  -o multireq_max=3  > /log/dbg_uploading.log
